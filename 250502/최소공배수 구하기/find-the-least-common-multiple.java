@@ -6,22 +6,15 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int lcm = findLcm(n, m);
-        System.out.println(lcm);
+        findLcm(n,m);
     }
 
-    public static int findGcd(int a, int b) {
-        
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+    public static void findLcm(int a, int b) {
+        int gcd = 0;
+        for(int i = 1; i <= Math.min(a, b); i++) {
+            if(a % i == 0 && b % i == 0)
+                gcd = i;
         }
-        return a;
-    }
-
-    public static int findLcm(int a, int b) {
-        int gcd = findGcd(a, b);
-        return a * b / gcd;
+        System.out.println(a * b / gcd);
     }
 }
