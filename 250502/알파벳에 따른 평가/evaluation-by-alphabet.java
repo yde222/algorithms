@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String str = sc.next();
+        char c = sc.next().charAt(0);
 
-        if(str.equals("S")){
+        if(c == 'S'){
              System.out.println("Superior");
-        }else if(str.equals("A")){
+        }else if(c== 'A'){
              System.out.println("Excellent");
-        }else if(str.equals("B")){
+        }else if(c == 'B'){
              System.out.println("Good");
-        }else if(str.equals("C")){
+        }else if(c == 'C'){
              System.out.println("Usually");
-        }else if(str.equals("D")){
+        }else if(c == 'D'){
              System.out.println("Effort");
         }else{
              System.out.println("Failure");
