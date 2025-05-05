@@ -5,7 +5,7 @@ public class Main {
     static int print3n(int n){
 
         if(n==1)
-            return count;
+            return 0;
 
         if(n % 2 == 0){
            
