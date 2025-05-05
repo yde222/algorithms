@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int Factorial(int n){
+    public static int factorial(int n){
 
         if(n<=1) return 1;
 
-        return n*Factorial(n-1); 
+        return n*factorial(n-1); 
 
     }
 
@@ -14,7 +14,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println(Factorial(n));
+        System.out.println(factorial(n));
        
     }
 }
