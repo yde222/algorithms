@@ -6,10 +6,6 @@ public class Main {
 
         if(n<=1) return 1;
 
-        for(int i=n; i>1;i--){
-            i*=(i-1);
-        }
-
         return n*Factorial(n-1); 
 
     }
