@@ -1,9 +1,12 @@
 import java.util.Scanner;
 public class Main {
+    public static final int MAX_DIGIT =20;
+    public static int[] digits = new int[MAX_DIGIT];
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] digits = new int[20];
+        
         int cnt = 0;
         
         while(true){
