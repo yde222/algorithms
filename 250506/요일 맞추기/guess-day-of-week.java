@@ -31,7 +31,8 @@ public class Main {
 
         int baseWeekIndex = 1; 
 
-        int diff = ((day2 - day1) + baseWeekIndex + 7) % 7;
+        int diff = ((day2 - day1 + baseWeekIndex) % 7 + 7) % 7;
+
       
         System.out.println(weeks[diff]);
 
