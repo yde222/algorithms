@@ -9,7 +9,7 @@ public class Main {
 
         int totalDays = 0;
 
-        for(int i= 0; i<m; i++){
+        for(int i= 1; i<m; i++){
             totalDays+= daysInMonth[i];
         }
 
